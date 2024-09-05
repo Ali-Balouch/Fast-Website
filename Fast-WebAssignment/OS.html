@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Structures - FAST University</title>
+    <style>
+        html, body {
+            margin: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #2c3e50;
+            color: white;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .logo {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        .logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .university-name {
+            font-size: 24px;
+            font-weight: bold;
+            margin-left: 30px;
+        }
+
+        nav {
+            text-align: right;
+        }
+
+        .nav-links {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links li {
+            display: inline-block;
+            margin-left: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            padding: 8px 15px;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a::before {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: white;
+            visibility: hidden;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .nav-links a:hover::before {
+            visibility: visible;
+            width: 100%;
+        }
+
+        .nav-links a:hover {
+            color: #1abc9c;
+        }
+
+        .main-content {
+            flex: 1;
+            padding: 80px 20px;
+            background-color: #f4f4f4;
+        }
+
+        .course-content {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .course-content h2 {
+            color: #2c3e50;
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+
+        .course-content p {
+            font-size: 16px;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .teachers {
+            margin-top: 20px;
+        }
+
+        .teachers ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .teachers li {
+            margin-bottom: 10px;
+        }
+
+        .timetable {
+            margin-top: 20px;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer .footer-main {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+
+        footer .footer-main div {
+            flex: 1;
+            margin: 10px;
+        }
+
+        footer h4 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        footer .footer-main ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        footer .footer-main ul li {
+            margin-bottom: 8px;
+        }
+
+        footer .footer-main a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        footer .footer-main a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="fastlogo.png" alt="FAST University Logo">
+        </div>
+        <div class="university-name">FAST University</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="academics.html">Academics</a></li>
+                <li><a href="admission.html">Admission</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="course-content">
+            <h2>Operating Systems</h2>
+            <p>The Operating Systems course introduces the concepts of operating system design, including process management, memory management, file systems, and system security.</p>
+            
+            <div class="teachers">
+                <h3>Instructors</h3>
+                <ul>
+                    <li>Dr. Abdullah Ahmed</li>
+                    <li>Prof. Khuja Bilal</li>
+                </ul>
+            </div>
+
+            <div class="timetable">
+                <h3>Timetable</h3>
+                <p>Tuesday and Thursday: 1:00 PM - 2:30 PM</p>
+                <p>Room: CS-201</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-main">
+            <div class="campuses">
+                <h4>Campuses</h4>
+                <ul>
+                    <li><a href="http://isb.nu.edu.pk" target="_blank">Islamabad Campus</a></li>
+                    <li><a href="http://khi.nu.edu.pk" target="_blank">Karachi Campus</a></li>
+                    <li><a href="http://lhr.nu.edu.pk" target="_blank">Lahore Campus</a></li>
+                    <li><a href="http://cfd.nu.edu.pk" target="_blank">Faisalabad Campus</a></li>
+                    <li><a href="http://pwr.nu.edu.pk" target="_blank">Peshawar Campus</a></li>
+                </ul>
+            </div>
+            <div class="contact-info">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="tel:111128128">111-128-128</a></li>
+                    <li><a href="mailto:info@nu.edu.pk">info@nu.edu.pk</a></li>
+                </ul>
+            </div>
+            <div class="location">
+                <h4>Location</h4>
+                <ul>
+                    <li>FAST University</li>
+                    <li>A.K. Brohi Road</li>
+                    <li>H-11/4, Islamabad</li>
+                </ul>
+            </div>
+        </div>
+        <div>© 2024 NUCES. All Rights Reserved.</div>
+    </footer>
+
+</body>
+</html>
